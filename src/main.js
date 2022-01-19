@@ -3,17 +3,21 @@ import App from './App.vue'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
+Vue.use(ElementUI);
 Vue.config.productionTip = false;
 // Vue.config.devtools = false;
 
-Vue.use(ElementUI);
+import TDesign from 'tdesign-vue';
+// 引入组件库全局样式资源
+import 'tdesign-vue/es/style/index.css';
+
+Vue.use(TDesign);
 
 new Vue({
   beforeCreate: function () {
     console.log(11111);
   },
-  Created: function () {
+  created: function () {
     console.log(22222);
   },
   beforeMount: function () {

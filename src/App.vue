@@ -102,6 +102,7 @@
     rules: { required: true },
   },
     ]"/>
+    <TencentComponent/>
   </div>
 </template>
 
@@ -111,6 +112,8 @@
 // import Computed from "@/components/Computed";
 // import Watch from "@/components/Watch";
 import DynamicForm from './components/DynamicForm';
+import TencentComponent from "./components/TencentComponent";
+
 
 export default {
   name: 'App',
@@ -119,7 +122,8 @@ export default {
     // Test
     // Computed,
     // Watch
-    DynamicForm
+    DynamicForm,
+    TencentComponent
   }
 }
 </script>
